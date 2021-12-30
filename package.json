@@ -1,0 +1,71 @@
+{
+  "name": "apsalus-app-next",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "@dmedina2015/skipper-gridfs": "^1.1.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "@paypal/react-paypal-js": "^7.4.2",
+    "@sailshq/connect-redis": "^3.2.1",
+    "@sailshq/lodash": "^3.10.3",
+    "@sailshq/socket.io-redis": "^5.2.0",
+    "@tailwindcss/typography": "^0.4.1",
+    "chalk": "^4.1.2",
+    "chart.js": "^3.6.0",
+    "daisyui": "^1.16.1",
+    "dotenv": "^10.0.0",
+    "easymde": "^2.15.0",
+    "express-rate-limit": "^5.5.1",
+    "fs": "^0.0.1-security",
+    "markdown-it": "^12.2.0",
+    "net": "^1.0.2",
+    "next": "^12.0.4",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^3.3.0",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.19.0",
+    "react-simplemde-editor": "^5.0.2",
+    "react-table": "^7.7.0",
+    "regenerator-runtime": "^0.13.9",
+    "sails": "^1.4.4",
+    "sails-hook-cron": "^3.2.0",
+    "sails-hook-organics": "^2.2.0",
+    "sails-hook-orm": "^3.0.2",
+    "sails-hook-slugs": "^4.0.1-beta.1",
+    "sails-hook-sockets": "^2.0.0",
+    "sails-mongo": "^2.0.0",
+    "sales-tax": "^2.4.0",
+    "sharp": "^0.29.3",
+    "theme-change": "^2.0.2",
+    "tls": "^0.0.1",
+    "usps-web-tools-node-sdk": "^0.6.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "eslint": "^6.8.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production next build",
+    "start": "NODE_ENV=production node app.js",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dan/apsalus-app-next.git"
+  },
+  "author": "dan",
+  "license": "",
+  "engines": {
+    "node": "^17.0.1"
+  }
+}

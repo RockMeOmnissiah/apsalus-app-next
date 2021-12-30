@@ -1,0 +1,5 @@
+<% /* Note: This is injected into `views/layouts/layout-email.ejs` */ %>
+<p style="margin-bottom: 25px;">Dear <%= fullName %>,</p>
+<p style="margin-bottom: 25px;">Order #<%= orderID %> containing <%= itemized %> has shipped with <%= carrier %> #<%- (carrier == 'USPS') ? `<a href='https://tools.usps.com/go/TrackConfirmAction?qtc_tLabels1=${trackingID}'>${trackingID}</a>` : trackingID %>. Thank you!</p>
+<p style="margin-bottom: 5px;">Sincerely,</p>
+<p style="margin-top: 0px;">The Apsalus Team</p>

@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-6xl;
+  }
+  h2 {
+    @apply text-4xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  blockquote {
+    @apply italic text-xl text-gray-500 bg-base-300 ml-12;
+  }
+  code {
+    @apply text-green-300 bg-neutral;
+  }
+  .card code {
+    @apply text-green-600 bg-base-300;
+  }
+  table {
+    @apply table table-zebra w-full;
+  }
+  .card table {
+    @apply text-base-content;
+  }
+  table thead tr th {
+    @apply font-bold text-lg;
+  }
+
+  div .CodeMirror-fullscreen,
+  .editor-preview-active-side {
+    @apply mb-16;
+  }
+  .CodeMirror-line span {
+    @apply bg-base-200;
+  }
+  .CodeMirror-line span .CodeMirror-selectedtext {
+    @apply bg-base-300;
+    @apply p-0;
+  }
+  .CodeMirror-line span span {
+    @apply p-0;
+  }
+  .editor-preview {
+    @apply text-left;
+  }
+}
